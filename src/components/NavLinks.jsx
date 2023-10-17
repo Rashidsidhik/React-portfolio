@@ -54,7 +54,7 @@ const NavLinks = () => {
         >
           {/* Portfolio link */}
           <NavLink to="/portfolio" onClick={() => setIsMenuOpen(false)}>
-            Portfolio
+            Projects
           </NavLink>
         </motion.div>
 

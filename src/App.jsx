@@ -10,8 +10,11 @@ import Portfolio from "./pages/portfolio/Portfolio";
 import ProjectDetails from "./pages/portfolio/[project]/ProjectDetails";
 import Resume from "./pages/resume/Resume";
 import Contact from "./pages/contact/Contact";
+import Education from "./pages/education/EducationComponent";
 import PageNotFound from "./pages/404/PageNotFound";
-
+import { ThemeProvider } from "styled-components";
+import { chosenTheme } from "./theme";
+import { GlobalStyles } from "./global";
 /**
  * Instructions for Customizing the Portfolio
  * ------------------------------------------
@@ -79,6 +82,8 @@ function App() {
 
   return (
     <>
+     <ThemeProvider theme={chosenTheme}>
+     {/* <GlobalStyles /> */}
       {showLoader ? (
         // Show loader until initial route is loaded
         <Loader setShowLoader={setShowLoader} />
@@ -88,9 +93,14 @@ function App() {
           <Header />
           {/* Define routes */}
           <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<Landing name={personalDetails.name} tagline={personalDetails.tagline} />} />
+            <Route path="/" element={<Landing name={personalDetails.name} tagline={personalDetails.tagline} theme={chosenTheme}/>} />
             <Route path="/portfolio" element={<Portfolio />} />
+            {/* <Route path="/experience" element={<Education />}/> */}
             <Route path="/resume" element={<Resume brand={personalDetails.brand} />} />
+            <Route
+  path="/experience"
+  element={<Education theme={personalDetails.theme} />}
+/>
 
             <Route
               path="/contact"
@@ -111,6 +121,7 @@ function App() {
           <Footer />
         </>
       )}
+      </ThemeProvider>
     </>
   );
 }

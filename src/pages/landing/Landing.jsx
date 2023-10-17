@@ -2,6 +2,9 @@ import Hero from "../../components/Hero";
 import Draw from "../../components/Draw";
 import About from "../../components/AboutMe";
 import Skills from '../../components/Skills/Skills';
+import Services from '../../components/Services/Services';
+import Skillls from "../../containers/skills/Skills";
+// import Achievement from '../../components/Achievement/Achievement';
 import { NavLink } from "react-router-dom";
 
 import Button from "../../components/Button";
@@ -13,7 +16,7 @@ import Button from "../../components/Button";
  * @param {string} name - The name of the user displayed in the Hero section.
  */
 
-const Landing = ({ name }) => {
+const Landing = ({ name,theme }) => {
   // Inline styles for the main landing container
   const styles = {
     landing: {
@@ -40,7 +43,11 @@ const Landing = ({ name }) => {
       {/* Display the about section */}
     
       <About />
+      <Skillls theme={theme} />
+        
       <Skills />
+      {/* <Achievement /> */}
+            <Services />
     </>
   );
 };

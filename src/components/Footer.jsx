@@ -22,7 +22,7 @@ const Footer = () => {
 
   useEffect(() => {
     // Fetch GitHub repository information
-    fetch("https://api.github.com/repos/mdyeates/my-portfolio")
+    fetch("https://github.com/Rashidsidhik/React-portfolio")
       .then((res) => res.json())
       .then((json) => {
         const { stargazers_count, forks_count } = json;
