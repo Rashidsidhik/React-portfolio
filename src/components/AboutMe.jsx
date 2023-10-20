@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { NavLink } from "react-router-dom";
 import Button from "./Button";
-import aboutMeImg from "../images/aboutme.jpeg";
+import aboutMeImg from "../images/aboutme.jpg";
 
 /**
  * Represents the About Me section.
@@ -40,7 +40,7 @@ const AboutMe = ({ name }) => {
     <section className="about">
       <div className="aboutContainer container">
         <div className="row">
-          
+
           <motion.div
             className="personalImage col-12 col-lg-6"
             ref={ref}
@@ -48,7 +48,7 @@ const AboutMe = ({ name }) => {
             animate={inView ? { x: 0, opacity: 1, scale: 1 } : { x: "-10vw", opacity: 0, scale: 0.5 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
             whileHover={{ scale: 1.05 }}
-          >  
+          >
             {/* Display the personal image */}
             <motion.img src={aboutMeImg} alt={name} />
           </motion.div>
@@ -67,24 +67,17 @@ const AboutMe = ({ name }) => {
               >
                 {/* Paragraphs with animation */}
                 <motion.p variants={paragraphVariants}>
-                  Today, I find myself knee-deep in an exhilarating chapter of my journey as a degree apprentice at the
-                  tech titan, <span style={{ color: "var(--hl-color)" }}> Amazon</span>. My playground? The captivating
-                  universe of <span style={{ color: "var(--hl-color)" }}> Alexa</span>.
+                  Hello! My name is <span style={{ color: "var(--hl-color)" }}> Rashid sidhik</span>and I enjoy creating things that live on the internet. As a self-taught Full stack developer, I have a strong passion for learning new technologies and staying up-to-date with the latest trends in the industry. I enjoy conducting research on new tools and techniques to improve my skill set, and I am not afraid to dive into unfamiliar territories. <span style={{ color: "var(--hl-color)" }}> </span>.
                 </motion.p>
                 <br />
                 <motion.p variants={paragraphVariants}>
-                  Here, I don my <span style={{ color: "var(--hl-color)" }}> problem-solving </span>
-                  cape and dive headfirst into real-world challenges, all while relentlessly pursuing a{" "}
-                  <span style={{ color: "var(--hl-color)" }}> Digital and Technology Solutions</span> degree from the
-                  University of Roehampton. So here I am, juggling bits of binary and real-life conundrums, all while
-                  crafting my own success story.
+                  Fast-forward to today, and I’ ve had the privilege of with multiple project . i have also build a E-commerce Web app from scratch to deployment<span style={{ color: "var(--hl-color)" }}> Shoemaze</span>
+                  , With my expertise in building dynamic web applications, I am confident in my ability to deliver high-quality code that meets business requirements.{" "}
+                  <span style={{ color: "var(--hl-color)" }}> </span>
                 </motion.p>
                 <br />
                 <motion.p variants={paragraphVariants}>
-                  Life is a kaleidoscope of experiences, far beyond the confines of work. When code isn't my focus, I'm
-                  conquering cycling routes, feeling the wind on spirited runs, and fueling my love for Formula One.
-                  Amid serene moments, I transform into a film aficionado, seeking films that kindle inspiration and
-                  provoke thought.
+                  I am currently working on an exciting new project - a learning management system platform that simplifies the learning process and makes education more accessible to everyone. I am excited to continue developing and enhancing this project
                 </motion.p>
               </motion.div>
 

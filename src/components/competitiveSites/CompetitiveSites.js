@@ -1,12 +1,10 @@
 import React from "react";
 import "./CompetitiveSites.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
-import { Icon } from '@iconify/react';
 
 class CompetitiveSites extends React.Component {
   render() {
-    console.log(this.props.logos)
-    return (
+    return ( 
       <div className="competitive-sites-main-div">
         <ul className="dev-icons">
           {this.props.logos.map((logo) => {
@@ -27,7 +25,12 @@ class CompetitiveSites extends React.Component {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Icon icon={logo.iconifyIcon} style={logo.style} />
+                    <span
+                      className="iconify"
+                      data-icon={logo.iconifyClassname}
+                      style={logo.style}
+                      data-inline="false"
+                    ></span>
                   </a>
                 </li>
               </OverlayTrigger>

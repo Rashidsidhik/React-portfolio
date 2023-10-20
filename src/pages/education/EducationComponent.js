@@ -10,12 +10,16 @@ import { certifications } from "../../portfolio";
 import "./EducationComponent.css";
 import { Fade } from "react-reveal";
 import { chosenTheme } from "./theme";
-
+const componentStyles = {
+  fontSize: "24px", // Increase the font size
+  padding: "40px", // Increase the padding to increase the size
+  backgroundColor: "rgba(0, 0, 0, 0.5)", // Add a background color for better visibility
+};
 class Education extends Component {
   render() {
     const theme={chosenTheme};
     return (
-      <div className="education-main">
+      <div className="education-main" style={componentStyles}>
       
         <div className="basic-education">
           <Fade bottom duration={2000} distance="40px">

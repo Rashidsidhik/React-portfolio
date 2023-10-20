@@ -58,7 +58,7 @@ const Hero = ({ name }) => {
     <Button name="View Portfolio" />
   </NavLink>
   <NavLink to="/contact">
-    <Button name="Contact" />
+    <Button name="RESUME" />
   </NavLink>
 </div>
 

@@ -137,7 +137,7 @@ const skills = {
         },
         {
           skillName: "NodeJS",
-          fontAwesomeClassname: "d",
+          fontAwesomeClassname: "vscode-icons:file-type-node",
           style: {
             color: "#339933",
           },
