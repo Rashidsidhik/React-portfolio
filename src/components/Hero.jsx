@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import Typewriter from "typewriter-effect";
+// import Typewriter from "typewriter-effect";
 import landingImage from "../images/suit.png";
 import SocialIcons from "./SocialIcons";
 import Type from "../components/Home/Type";
@@ -57,7 +57,7 @@ const Hero = ({ name }) => {
   <NavLink to="/portfolio">
     <Button name="View Portfolio" />
   </NavLink>
-  <NavLink to="/contact">
+  <NavLink to="/Resume">
     <Button name="RESUME" />
   </NavLink>
 </div>

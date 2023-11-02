@@ -33,10 +33,10 @@ class Education extends Component {
               </div>
               <div className="heading-text-div">
                 <h1 className="heading-text" style={{ color:'rgb(243,243,243)' }}>
-                  Education
+                  Experience
                 </h1>
                 <h3 className="heading-sub-text" style={{ color:'rgb(243,243,243)' }}>
-                  Basic Qualification and Certifcations
+                  Basic Qualification and Experience
                 </h3>
                 <CompetitiveSites logos={competitiveSites.competitiveSites} />
               </div>
