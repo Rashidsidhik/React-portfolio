@@ -4,31 +4,12 @@ import { useState } from "react";
 import validator from "email-validator";
 import Button from "./Button";
 
-/**
- * Contact Form Component
- * ----------------------
- * This component represents a fully functional contact form.
- *
- * @component
- *
- * Form Submission API Key:
- * ------------------------
- * To enable form submissions, obtain your API Key from https://web3forms.com/
- *
- * Follow these steps:
- * 1. Create a .env file in the root directory.
- * 2. Copy and paste the following line into your .env file, replacing with your API key:
- *    REACT_APP_ACCESS_KEY="Your API Key"
- *
- */
-
 const Form = () => {
   const [ref, inView] = useInView({
     threshold: 0,
     triggerOnce: true,
   });
 
-  // State for handling form submission statuses and errors
   const [success, setSuccess] = useState(false);
   const [sending, setSending] = useState(false);
   const [failed, setFailed] = useState(false);
@@ -37,7 +18,6 @@ const Form = () => {
   const [subjectError, setSubjectError] = useState(false);
   const [messageError, setMessageError] = useState(false);
 
-  // State for form data
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -46,7 +26,6 @@ const Form = () => {
     access_key: process.env.REACT_APP_ACCESS_KEY,
   });
 
-  // Handle input change
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -54,22 +33,18 @@ const Form = () => {
     });
   };
 
-  // Handle input focus to reset error state
   const handleInputFocus = (errorStateSetter) => {
     errorStateSetter(false);
   };
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validate and set error states
     formData.name === "" ? setNameError(true) : setNameError(false);
     formData.email === "" || !validator.validate(formData.email) ? setEmailError(true) : setEmailError(false);
     formData.subject === "" ? setSubjectError(true) : setSubjectError(false);
     formData.message === "" ? setMessageError(true) : setMessageError(false);
 
-    // Handle invalid form
     if (
       nameError ||
       emailError ||
@@ -90,13 +65,11 @@ const Form = () => {
       return;
     }
 
-    // Form submission in progress
     setSending(true);
 
     const data = JSON.stringify(formData);
 
-    // Send form data to an API endpoint
-    fetch("https://api.web3forms.com/submit", {
+    fetch("https://script.google.com/macros/s/AKfycby5bibKpQ4GtHbPdFGvASCWIcTVWHKQijaTUIVTmybjtF3WhJaXM32Eq36GnfYOkfYmUw/exec", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -106,7 +79,6 @@ const Form = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        // Form submission success
         setSending(false);
         setSuccess(true);
         setFailed(false);
@@ -122,14 +94,12 @@ const Form = () => {
         }, 3000);
       })
       .catch((err) => {
-        // Form submission failed
         console.log(err);
         setSending(false);
         setFailed(true);
       });
   };
 
-  // Determine button text based on status
   const handleButtonText = () => {
     if (sending) {
       return "Please wait...";
@@ -153,7 +123,6 @@ const Form = () => {
       onSubmit={handleSubmit}
     >
       <h4 className="contentTitle">Message Me</h4>
-      {/* Input fields */}
       <div className="col-12 col-md-6 formGroup" style={{ display: "inline-block" }}>
         <input
           type="text"
@@ -214,7 +183,6 @@ const Form = () => {
           autoComplete="off"
         ></textarea>
       </div>
-      {/* Form submission button */}
       <motion.div className="col-12 formGroup formSubmit">
         <Button
           name={handleButtonText()}
