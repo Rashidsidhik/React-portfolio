@@ -397,7 +397,7 @@ const certifications = {
     {
       title: "Optical Fiber Technician",
       subtitle: "Iris Corporate Solution Private Limited",
-      logo_path: "deeplearning_ai_logo.png",
+      logo_path: "iris.png",
       certificate_link:
         "https://drive.google.com/file/d/1ngmNkKATKP905Ygs8C45Ct6A_H1Nz255/view?usp=sharing",
       alt_name: "BSNL Ernakulam",
