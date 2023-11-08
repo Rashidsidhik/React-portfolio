@@ -14,12 +14,12 @@ export const servicesData = [
     // },
     {
         id: 2,
-        title: 'Content Writing',
+        title: 'Branding Design',
         icon: <BiPencil /> 
     },
     {
         id: 3,
-        title: 'Email Marketing',
+        title: 'Digital Marketing',
         icon: <AiOutlineMail />
     },
     // {
@@ -35,7 +35,7 @@ export const servicesData = [
 
     {
         id: 6,
-        title: 'Web Design',
+        title: 'Web Development',
         icon: <BsCodeSlash />
     },
     {
@@ -60,7 +60,7 @@ export const servicesData = [
     // },
     {
         id: 11,
-        title: 'Ebook Writing',
+        title: 'App Design',
         icon: <FaTabletAlt />
     },
     // {
@@ -70,7 +70,7 @@ export const servicesData = [
     // },
     {
         id: 13,
-        title: 'Blog Posting',
+        title: 'UI/UX Designing',
         icon: <FaRegNewspaper />
     },
 

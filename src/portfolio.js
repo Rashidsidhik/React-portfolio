@@ -341,7 +341,7 @@ const degrees = {
     {
       title: "Fullstack developer @ BROTOTYPE",
       subtitle: "MERN Stack Developer",
-      logo_path: "iiitk_logo.png",
+      logo_path: "channel.png",
       alt_name: "IIITDM Kurnool",
       duration: "2022 - Present",
       descriptions: [
@@ -355,7 +355,7 @@ const degrees = {
     {
       title: "Web development @ Bootcamp",
       subtitle: "WEB DEVELOPER",
-      logo_path: "iu_logo.png",
+      logo_path: "channel.png",
       alt_name: "Indiana University Bloomington",
       duration: "2022 - Present",
       descriptions: [
@@ -369,7 +369,7 @@ const degrees = {
     {
       title: "Mechanical Engineering",
       subtitle: "Govt Polytechnic College, Muttom",
-      logo_path: "iu_logo.png",
+      logo_path: "kt.png",
       alt_name: "Indiana University Bloomington",
       duration: "2016 - 2019",
       descriptions: [
@@ -388,7 +388,7 @@ const certifications = {
     {
       title: "AutomationTechnologies",
       subtitle: "Bosch Rexroth",
-      logo_path: "stanford_logo.png",
+      logo_path: "bosch.png",
       certificate_link:
         "https://drive.google.com/file/d/1njdbcG-r8IwsqBMpHmREwEdumGgmKDv-/view?usp=sharing",
       alt_name: "NationalInstitute ofElectronics and InformationTechnology (NIEIT)",
