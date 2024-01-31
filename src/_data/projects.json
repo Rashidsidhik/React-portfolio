@@ -8,7 +8,7 @@
     "body": "My passion for movies and a frustrating experience led me to create a professional and user-friendly movie booking website that simplifies the process of reserving tickets. This platform offers convenience and efficiency to moviegoers, providing a seamless solution for a hassle-free movie-watching experience.Movie Tickets booking web application,with Three modules User, Theater and Admin. Enabled the admin to add movies and the theater to request a movie reservation which the admin can approve or reject.Implemented functionality that allowsthe approved theater to add movies, screensinformation.",
     "technologies": ["Node.js", "React.js", "MongoDB", "Express.js", "Material UI", "Socket.IO"],
     "github": "https://github.com/Rashidsidhik/MovieTicket",
-    "deployed": "https://cinebook.shoemaze.shop/",
+    "deployed": "https://cinebook.fonokart.shop/",
     "bgcolor": "var(--hl2-color)",
     "id": "1"
   },
@@ -34,7 +34,7 @@
     "technologies": ["JavaScript", "NodeJS", "Bootstrap", "MongoDB", "Handlebars", "RESTapi's"],
     "body": " Introducing a robust MERN stack e-commerce website for dress enthusiasts, crafted with passion.Powered by #nodejs and #MongoDB as the robust backend, and enhanced with Handlebars as the sleek frontend view engine, this project showcases the seamless integration of cutting-edge technologies.Throughout this project, I encountered numerous challenges that pushed me to grow and learn. I extend my heartfelt gratitude to #Brototype for providing the perfect platform to sharpen my skills. Special thanks to my advisors and reviewers for their unwavering support and guidance.Deployed on Amazon Web Services (#AWS), leveraging the power of NGINX as both a proxy server and a load balancer, this project guarantees a smooth and scalable user experience. Version control was managed using Git and GitHub.",
     "github": "https://github.com/Rashidsidhik/Shoemaze",
-    "deployed": "https://ecommerce.shoemaze.shop/",
+    "deployed": "https://ecommerce.fonokart.shop/",
     "bgcolor": "#6c4bf4",
     "id": "3"
   },
