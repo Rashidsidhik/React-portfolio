@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 // import Typewriter from "typewriter-effect";
-import landingImage from "../images/suit.png";
+import landingImage from "../images/suit.jpg";
 import SocialIcons from "./SocialIcons";
 import Type from "../components/Home/Type";
 import { NavLink } from "react-router-dom";
@@ -46,19 +46,22 @@ const Hero = ({ name }) => {
     <>
     <div style={{
   display: 'flex',
-  justifyContent: 'space-between',
+  justifyContent: 'center', // Center the buttons horizontally
+  alignItems: 'center', // Center the buttons vertically
   position: 'absolute',
   bottom: '20px',
-  left: '1200px',
-  width: '320px',
-  paddingLeft:'',
+  left: '85%', // Center the button container horizontally
+  transform: 'translateX(-50%)', // Center the button container horizontally
+  width: '90%', // Adjust the width as needed
   zIndex: 1,
 }}>
   <NavLink to="/portfolio">
-    <Button name="View Portfolio" />
+    <Button name="View Portfolio" style={{ margin: '18px',
+    padding: '8px',} }/>
   </NavLink>
   <NavLink to="/Resume">
-    <Button name="RESUME" />
+    <Button name="RESUME" style={{ margin: '18px',
+    padding: '8px',}} />
   </NavLink>
 </div>
 

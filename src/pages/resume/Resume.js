@@ -8,7 +8,7 @@ const Resume = ({ brand }) => {
      
       <PageHeader title="Resume" description="Uncover my expertise" />
       <p className="brand">{brand}</p>
-      <NavLink to="https://drive.google.com/file/d/1L041-IzSTW29hPOEglCmRE4vipTR4fb_/view?usp=sharing">
+      <NavLink to="https://drive.google.com/file/d/11gmq-9xsTz7Mz3RftvJYQ2_zyaDB5TB6/view?usp=sharing">
     <Button name="VIEW RESUME" />
   </NavLink>
     </section>

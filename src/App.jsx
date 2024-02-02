@@ -112,6 +112,7 @@ function App() {
                 />
               }
             />
+             <Route path="/" element={<PageNotFound />} />
             <Route path="/page-not-found" element={<PageNotFound />} />
             <Route path="/portfolio/:projectTitle" element={<ProjectDetails />} />
             {/* Fallback route for unknown paths */}
